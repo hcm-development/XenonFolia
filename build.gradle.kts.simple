@@ -1,0 +1,33 @@
+plugins {
+    java
+}
+
+val paperMavenPublicUrl = "https://repo.papermc.io/repository/maven-public/"
+
+subprojects {
+    apply(plugin = "java-library")
+    apply(plugin = "maven-publish")
+
+    extensions.configure<JavaPluginExtension> {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+    }
+
+    repositories {
+        mavenCentral()
+        maven(paperMavenPublicUrl)
+    }
+
+    tasks.withType<JavaCompile> {
+        options.encoding = Charsets.UTF_8.name()
+        options.release = 21
+        options.isFork = true
+    }
+    tasks.withType<Javadoc> {
+        options.encoding = Charsets.UTF_8.name()
+    }
+    tasks.withType<ProcessResources> {
+        filteringCharset = Charsets.UTF_8.name()
+    }
+}

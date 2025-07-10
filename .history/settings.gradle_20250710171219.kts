@@ -29,3 +29,5 @@ if (!file(".git").exists()) {
 }
 
 rootProject.name = "xenonfolia"
+
+include("folia-api", "folia-server")

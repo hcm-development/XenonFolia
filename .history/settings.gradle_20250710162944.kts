@@ -28,4 +28,6 @@ if (!file(".git").exists()) {
     error(errorText)
 }
 
-rootProject.name = "xenonfolia"
+rootProject.name = "folia"
+
+include("folia-api", "folia-server")
