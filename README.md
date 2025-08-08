@@ -39,3 +39,8 @@
 
 ## 📄 Giấy phép
 - XenonFolia tuân theo giấy phép của PaperMC và các dự án liên quan.
+
+## Contributor
+- LuminolMC
+
+Thanks To LuminolMC Contributor
