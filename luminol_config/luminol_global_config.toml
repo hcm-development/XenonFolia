@@ -1,0 +1,154 @@
+	[experiment.disable_entity_exception_catchers]
+		enabled = false
+
+	[experiment.force_cleanup_drop_non_owned_entity_memory_module]
+		#When enabled, the entity's brain will clean the memory which is typed of entity and not belong to current tickregion
+		enabled_for_entity = false
+		#When enabled, the entity's brain will clean the memory which is typed of block_pos and not belong to current tickregion
+		enabled_for_block_pos = false
+
+	[experiment.disable_async_catchers]
+		enabled = false
+
+	[experiment.force_the_data_command_to_be_enabled]
+		enable = false
+
+	[fixes.allow_unsafe_teleportation]
+		#Allow non player entities enter end portals if enabled.
+		#If you want to use sand duping,please turn on this.
+		#Warning: This would cause some unsafe issues, you could learn more on : https://github.com/PaperMC/Folia/issues/297
+		enabled = false
+
+		[fixes.folia.fix_high_velocity_issue]
+			#A simple fix of an issue on folia 
+			#(Sometimes the entity would 
+			#have a large moment that cross the 
+			#different tick regions, and it would 
+			#make the server crashed) but sometimes it might doesn't work
+			enabled = false
+			warn_on_detected = true
+
+		[fixes.folia.fix_poi_access_off_region]
+			#The POIManager of folia has something which has not been patched 
+			#for regionized ticking and these would trigger the async catcher 
+			#and make the server crash.If you would like to prevent it and didn't 
+			#mind the side effect(currently unknown), you can enable this
+			enabled = false
+
+	[fixes.use_vanilla_random_source]
+		#Related with RNG cracks
+		enable_for_player_entity = false
+
+	[misc.warn_on_offline_mode]
+		enabled = true
+
+	[misc.server_mod_name]
+		name = "Luminol"
+		vanilla_spoof = false
+
+	[misc.tripwire_dupe]
+		enabled = false
+		#Available Value:
+		#VANILLA20
+		#VANILLA21
+		#MIXED
+		behavior_mode = "VANILLA21"
+
+	[misc.username_checks]
+		enabled = true
+
+	[misc.mojang_out_of_order_chat_check]
+		enabled = true
+
+	[misc.region_format]
+		linear_compression_level = 1
+		format = "MCA"
+		linear_io_flush_delay_ms = 100
+		linear_io_thread_count = 6
+		linear_use_virtual_thread = true
+
+	[misc.tpsbar]
+		format = "<gray>TPS<yellow>:</yellow> <tps> MSPT<yellow>:</yellow> <mspt> Ping<yellow>:</yellow> <ping>ms ChunkHot<yellow>:</yellow> <chunkhot>"
+		ping_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		tps_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		chunkhot_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		enabled = false
+		update_interval_ticks = 15
+
+	[misc.cpu_affinity]
+		enabled = false
+		tickregion_affinity = ["0", "1"]
+
+	[misc.regionbar]
+		format = "<gray>Util<yellow>:</yellow> <util> Chunks<yellow>:</yellow> <green><chunks></green> Players<yellow>:</yellow> <green><players></green> Entities<yellow>:</yellow> <green><entities></green>"
+		enabled = false
+		util_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		update_interval_ticks = 15
+
+	[misc.disable_moved_wrongly_threshold]
+		enabled = false
+
+	[misc.folia_watchdog]
+		tick_region_time_out_ms = 5000
+
+	[misc.collision_behavior]
+		#Available Value:
+		#VANILLA
+		#BLOCK_SHAPE_VANILLA
+		#PAPER
+		mode = "BLOCK_SHAPE_VANILLA"
+
+	[misc.heightmap_warn_disable]
+		#Disable heightmap-check's warning
+		enabled = false
+
+	[misc.verify_publickey_only_in_online_mode]
+		enabled = false
+
+	[misc.membar]
+		format = "<gray>Memory usage <yellow>:</yellow> <used>MB<yellow>/</yellow><available>MB"
+		memory_color_list = ["GREEN", "YELLOW", "RED", "PURPLE"]
+		enabled = false
+		update_interval_ticks = 15
+
+	[misc.secure_seed]
+		#Once you enable secure seed, all ores and structures are generated with 1024-bit seed
+		#instead of using 64-bit seed in vanilla, made seed cracker become impossible.
+		enabled = false
+
+	[misc.sentry]
+		# Logs with a level higher than or equal to this level will be recorded.
+		log_level = "WARN"
+		# Only log with a Throwable will be recorded after enabling this.
+		only_log_thrown = true
+		# Sentry DSN for improved error logging, leave blank to disable,
+		# Obtain from https://sentry.io/
+		dsn = ""
+
+	[optimizations.alternative_keepalive_handling]
+		enabled = false
+
+	[optimizations.skip_goal_selector_tick_in_inactive_tick]
+		enabled = false
+
+	[optimizations.use_simd]
+		enabled = true
+
+	[optimizations.lobotomize_villager]
+		check_interval = 100
+		wait_until_trade_locked = false
+		enabled = false
+
+	[optimizations.projectile]
+		max-loads-per-projectile = 0
+		max-loads-per-tick = 0
+
+	[optimizations.variable_entity_waking_up]
+		entity_wakeup_duration_ratio_standard_deviation = 0.2
+
+	[optimizations.suffocation_optimization]
+		enabled = false
+
+	[optimizations.reduce_sensor_work]
+		delay_ticks = 10
+		enabled = true
