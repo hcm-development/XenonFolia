@@ -98,7 +98,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
 @@ -49,8 +49,8 @@ public class TickThread extends Thread {
      @Deprecated
      public static void ensureTickThread(final String reason) {
-         if (!isTickThread() && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThread() && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Xenon
 -            LOGGER.error("Thread failed main thread check: " + reason + ", context=" + getThreadContext(), new Throwable());
 -            throw new IllegalStateException(reason);
 +            //LOGGER.error("Thread failed main thread check: " + reason + ", context=" + getThreadContext(), new Throwable());
@@ -107,7 +107,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
      }
  
 @@ -58,8 +58,8 @@ public class TickThread extends Thread {
-         if (!isTickThreadFor(world, pos) && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThreadFor(world, pos) && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
              final String ex = "Thread failed main thread check: " +
                                 reason + ", context=" + getThreadContext() + ", world=" + WorldUtil.getWorldName(world) + ", block_pos=" + pos;
 -            LOGGER.error(ex, new Throwable());
@@ -118,7 +118,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
      }
  
 @@ -67,8 +67,8 @@ public class TickThread extends Thread {
-         if (!isTickThreadFor(world, pos, blockRadius) && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThreadFor(world, pos, blockRadius) && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
              final String ex = "Thread failed main thread check: " +
                  reason + ", context=" + getThreadContext() + ", world=" + WorldUtil.getWorldName(world) + ", block_pos=" + pos + ", block_radius=" + blockRadius;
 -            LOGGER.error(ex, new Throwable());
@@ -129,7 +129,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
      }
  
 @@ -76,8 +76,8 @@ public class TickThread extends Thread {
-         if (!isTickThreadFor(world, pos) && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThreadFor(world, pos) && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
              final String ex = "Thread failed main thread check: " +
                  reason + ", context=" + getThreadContext() + ", world=" + WorldUtil.getWorldName(world) + ", chunk_pos=" + pos;
 -            LOGGER.error(ex, new Throwable());
@@ -140,7 +140,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
      }
  
 @@ -85,8 +85,8 @@ public class TickThread extends Thread {
-         if (!isTickThreadFor(world, chunkX, chunkZ) && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThreadFor(world, chunkX, chunkZ) && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
              final String ex = "Thread failed main thread check: " +
                  reason + ", context=" + getThreadContext() + ", world=" + WorldUtil.getWorldName(world) + ", chunk_pos=" + new ChunkPos(chunkX, chunkZ);
 -            LOGGER.error(ex, new Throwable());
@@ -151,7 +151,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
      }
  
 @@ -94,8 +94,8 @@ public class TickThread extends Thread {
-         if (!isTickThreadFor(entity) && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThreadFor(entity) && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
              final String ex = "Thread failed main thread check: " +
                  reason + ", context=" + getThreadContext() + ", entity=" + EntityUtil.dumpEntity(entity);
 -            LOGGER.error(ex, new Throwable());
@@ -162,7 +162,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
      }
  
 @@ -103,8 +103,8 @@ public class TickThread extends Thread {
-         if (!isTickThreadFor(world, aabb) && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThreadFor(world, aabb) && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
              final String ex = "Thread failed main thread check: " +
                  reason + ", context=" + getThreadContext() + ", world=" + WorldUtil.getWorldName(world) + ", aabb=" + aabb;
 -            LOGGER.error(ex, new Throwable());
@@ -173,7 +173,7 @@ index 4efa1c057ae6cfdea7889c372bd62dc14637daa0..5fda80262e4437409d6060c7225d76a7
      }
  
 @@ -112,8 +112,8 @@ public class TickThread extends Thread {
-         if (!isTickThreadFor(world, blockX, blockZ) && !me.earthme.luminol.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
+         if (!isTickThreadFor(world, blockX, blockZ) && !me.earthme.xenon.config.modules.experiment.DisableAsyncCatcherConfig.enabled) { // Luminol
              final String ex = "Thread failed main thread check: " +
                  reason + ", context=" + getThreadContext() + ", world=" + WorldUtil.getWorldName(world) + ", block_pos=" + new Vec3(blockX, 0.0, blockZ);
 -            LOGGER.error(ex, new Throwable());
@@ -209,13 +209,13 @@ index 335058589eeba934105bea31a0c3aea2293a5597..db1e0d7f27ecae60ab853b4a16ec2cf1
          }
          // Folia end - block plugins not marked as supported
          // Copied from SimplePluginManager#loadPlugins
-diff --git a/src/main/java/me/earthme/lightingluminol/RegonizedWorldDataSwitcher.java b/src/main/java/me/earthme/lightingluminol/RegonizedWorldDataSwitcher.java
+diff --git a/src/main/java/me/earthme/xenonfolia/RegonizedWorldDataSwitcher.java b/src/main/java/me/earthme/xenonfolia/RegonizedWorldDataSwitcher.java
 new file mode 100644
 index 0000000000000000000000000000000000000000..79b4fce127eb4681ee30dde599d5b12dc60c8026
 --- /dev/null
-+++ b/src/main/java/me/earthme/lightingluminol/RegonizedWorldDataSwitcher.java
++++ b/src/main/java/me/earthme/xenonfolia/RegonizedWorldDataSwitcher.java
 @@ -0,0 +1,61 @@
-+package me.earthme.lightingluminol;
++package me.earthme.xenonfolia;
 +
 +import io.papermc.paper.threadedregions.RegionizedWorldData;
 +import it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap;

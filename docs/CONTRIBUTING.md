@@ -1,4 +1,4 @@
-为LightingLuminol贡献代码
+为XenonFolia贡献代码
 ===========
 
 [English](./CONTRIBUTING_EN.md) | **中文**

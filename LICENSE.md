@@ -1,13 +1,13 @@
-LightingLuminol inherits its licensing from the included upstream projects.
+XenonFolia inherits its licensing from the included upstream projects.
 
-LightingLuminol从上游继承了许可证。
+XenonFolia从上游继承了许可证。
 
-As such, LightingLuminol is licensed under the 
+As such, XenonFolia is licensed under the 
 [GNU General Public License version 3](licenses/GPL.md); as it inherits it from Luminol,
 who in turn inherits it from the original Folia, Paper, Spigot, Bukkit and CraftBukkit projects.
 
-因此，LightingLuminol中应当遵守[GNU通用公共许可证-第3版](licenses/GPL.md)；
-因为LightingLuminol从上游Luminol继承了它，而Luminol又从其上游的Folia、Paper、Spigot、Bukkit和Craftbukkit项目中继承了它。
+因此，XenonFolia中应当遵守[GNU通用公共许可证-第3版](licenses/GPL.md)；
+因为XenonFolia从上游Luminol继承了它，而Luminol又从其上游的Folia、Paper、Spigot、Bukkit和Craftbukkit项目中继承了它。
 
 Any author who is _not_ listed below should be presumed to have released their work
 under the original [GPL](licenses/GPL.md) license.

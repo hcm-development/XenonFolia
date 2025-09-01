@@ -1,4 +1,13 @@
-<!-- [!CAUTION]
+<!-<img src="./public/image/LightingLuminol_LL方_白_字.png" alt="Logo" align="right" width="250">
+
+# XenonFolia
+
+<h4>XenonFolia is a Luminol fork with many useful optimizations, configurable vanilla features, and more API supports, aims to run more bukkit plugins on folia</h4>
+
+[![License](https://img.shields.io/github/license/hcm-development/XenonFolia?style=flat-square)](LICENSE.md)
+[![Issues](https://img.shields.io/github/issues/hcm-development/XenonFolia?style=flat-square)](https://github.com/hcm-development/XenonFolia/issues)
+![Commit Activity](https://img.shields.io/github/commit-activity/w/hcm-development/XenonFolia?style=flat-square)
+![GitHub all releases](https://img.shields.io/github/downloads/hcm-development/XenonFolia/total?style=flat-square)N]
 > Be aware that this project may have memory leakage issues and use with caution
 -->
 <img src="./public/image/LightingLuminol_LL方_白_字.png" alt="Logo" align="right" width="250">

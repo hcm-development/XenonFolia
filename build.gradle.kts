@@ -13,23 +13,23 @@ paperweight {
 
         patchFile {
             path = "luminol-server/build.gradle.kts"
-            outputFile = file("lightingluminol-server/build.gradle.kts")
-            patchFile = file("lightingluminol-server/build.gradle.kts.patch")
+            outputFile = file("xenonfolia-server/build.gradle.kts")
+            patchFile = file("xenonfolia-server/build.gradle.kts.patch")
         }
         patchFile {
             path = "luminol-api/build.gradle.kts"
-            outputFile = file("lightingluminol-api/build.gradle.kts")
-            patchFile = file("lightingluminol-api/build.gradle.kts.patch")
+            outputFile = file("xenonfolia-api/build.gradle.kts")
+            patchFile = file("xenonfolia-api/build.gradle.kts.patch")
         }
         patchRepo("paperApi") {
             upstreamPath = "paper-api"
-            patchesDir = file("lightingluminol-api/paper-patches")
+            patchesDir = file("xenonfolia-api/paper-patches")
             outputDir = file("paper-api")
         }
         patchDir("luminolApi") {
             upstreamPath = "luminol-api"
             excludes = listOf("build.gradle.kts", "build.gradle.kts.patch", "paper-patches")
-            patchesDir = file("lightingluminol-api/luminol-patches")
+            patchesDir = file("xenonfolia-api/luminol-patches")
             outputDir = file("luminol-api")
         }
     }

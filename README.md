@@ -1,13 +1,13 @@
 <img src="./public/image/LightingLuminol_LL方_白_字.png" alt="Logo" align="right" width="250">
 
-# LightingLuminol
+# XenonFolia
 
-<h4>LightingLuminol 是一个基于Luminol的分支，具有许多有用的优化、可配置的原版特性和更多的API支持，目标是在Folia上运行更多Bukkit插件</h4>
+<h4>XenonFolia 是一个基于Luminol的分支，具有许多有用的优化、可配置的原版特性和更多的API支持，目标是在Folia上运行更多Bukkit插件</h4>
 
-[![License](https://img.shields.io/github/license/LuminolMC/LightingLuminol?style=flat-square)](LICENSE.md)
-[![Issues](https://img.shields.io/github/issues/LuminolMC/LightingLuminol?style=flat-square)](https://github.com/LuminolMC/LightingLuminol/issues)
-![Commit Activity](https://img.shields.io/github/commit-activity/w/LuminolMC/LightingLuminol?style=flat-square)
-![GitHub all releases](https://img.shields.io/github/downloads/LuminolMC/LightingLuminol/total?style=flat-square)
+[![License](https://img.shields.io/github/license/hcm-development/XenonFolia?style=flat-square)](LICENSE.md)
+[![Issues](https://img.shields.io/github/issues/hcm-development/XenonFolia?style=flat-square)](https://github.com/hcm-development/XenonFolia/issues)
+![Commit Activity](https://img.shields.io/github/commit-activity/w/hcm-development/XenonFolia?style=flat-square)
+![GitHub all releases](https://img.shields.io/github/downloads/hcm-development/XenonFolia/total?style=flat-square)
 
 [English](./README_EN.md) | **中文**
 

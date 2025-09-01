@@ -10,7 +10,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
 }
 
-rootProject.name = "lightingluminol"
+rootProject.name = "xenonfolia"
 
-include("lightingluminol-api")
-include("lightingluminol-server")
+include("xenonfolia-api")
+include("xenonfolia-server")

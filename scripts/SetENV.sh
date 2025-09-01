@@ -2,8 +2,8 @@ prop() {
   grep "^[[:space:]]*${1}" gradle.properties | cut -d'=' -f2 | sed 's/^[[:space:]]*//; s/\r//'
 }
 
-project_id="lightingluminol"
-project_id_b="LightingLuminol"
+project_id="xenonfolia"
+project_id_b="XenonFolia"
 
 commitid=$(git log --pretty='%h' -1)
 mcversion=$(prop mcVersion)
@@ -12,12 +12,12 @@ preVersion=$(prop preVersion)
 release_tag="$mcversion-$commitid"
 jarName="$project_id-$mcversion-paperclip.jar"
 jarName_bundler="$project_id-$mcversion-bundler.jar"
-jarName_dir="lightingluminol-server/build/libs/$jarName"
-jarName_bundler_dir="lightingluminol-server/build/libs/$jarName_bundler"
+jarName_dir="xenonfolia-server/build/libs/$jarName"
+jarName_bundler_dir="xenonfolia-server/build/libs/$jarName_bundler"
 make_latest=$([ $preVersion = "true" ] && echo "false" || echo "true")
 
-mv lightingluminol-server/build/libs/$project_id-paperclip-$grdversion-mojmap.jar $jarName_dir
-mv lightingluminol-server/build/libs/$project_id-bundler-$grdversion-mojmap.jar $jarName_bundler_dir
+mv xenonfolia-server/build/libs/$project_id-paperclip-$grdversion-mojmap.jar $jarName_dir
+mv xenonfolia-server/build/libs/$project_id-bundler-$grdversion-mojmap.jar $jarName_bundler_dir
 
 echo "project_id=$project_id" >> $GITHUB_ENV
 echo "project_id_b=$project_id_b" >> $GITHUB_ENV

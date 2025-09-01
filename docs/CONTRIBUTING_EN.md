@@ -1,4 +1,4 @@
-Contributing to LightingLuminol
+Contributing to XenonFolia
 ===========
 
 **English** | [中文](./CONTRIBUTING.md)
